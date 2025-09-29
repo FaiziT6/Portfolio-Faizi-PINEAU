@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sommaire</title>
-  <!-- Lien vers la feuille de style -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommaire des Travaux Pratiques</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <h1>Sommaire</h1>
-  
-  <nav class="menu">
-    <ul>
-      <li>
-        <a href="#">Chapitre 1</a>
-        <ul class="sous-menu">
-          <li><a href="#partie1">Partie 1</a></li>
-          <li><a href="#partie2">Partie 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Chapitre 2</a>
-        <ul class="sous-menu">
-          <li><a href="#partie3">Partie 3</a></li>
-          <li><a href="#partie4">Partie 4</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Chapitre 3</a>
-        <ul class="sous-menu">
-          <li><a href="#partie5">Partie 5</a></li>
-          <li><a href="#partie6">Partie 6</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+
+    <header class="header">
+        <h1>🚀 Mon Sommaire de Travaux Pratiques 💻</h1>
+        <p>Retrouve tous tes projets ici !</p>
+    </header>
+
+    <main class="container">
+        <section class="dropdown-menu">
+            <button class="dropbtn">📂 Accéder à mes Travaux Pratiques</button>
+            <div class="dropdown-content">
+                
+                <a href="tp1/index.html" class="link-view">
+                    TP 1 
+                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
+                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
+                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
+                </a>
+
+                <a href="tp2/tp2.zip" download="TP2-Flexbox.zip" class="link-download">
+                    TP 2 
+                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
+                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
+                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
+                </a>
+                
+                <a href="tp3/index.html" class="link-view">
+                    TP 3 
+                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
+                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
+                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
+                </a>
+
+                <a href="tp4/tp4.zip" download="TP4-Formulaires.zip" class="link-download">
+                    TP 4 
+                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
+                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
+                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
+                </a>
+                
+                <a href="#">... bientôt plus de projets !</a>
+            </div>
+        </section>
+
+        <section class="presentation">
+            <h2>Bienvenue !</h2>
+            <p>Utilise le menu déroulant pour naviguer. Les icônes t'indiquent l'action </p>
+            <p>Chaque TP est un pas de plus vers la maîtrise du développement </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Réalisé par Faizi PINEAU</p>
+    </footer>
+
 </body>
 </html>

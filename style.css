@@ -1,55 +1,176 @@
-/* Style général */
+/* --- 1. Styles Généraux et Typographie --- */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; /* Arrière-plan très clair */
+    color: #333;
+    line-height: 1.6;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-/* Style du menu */
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* --- 2. En-tête (Header) --- */
+
+.header {
+    background-color: #007bff; /* Bleu vif pour un look pro */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.menu > ul > li {
-  background: #0077cc;
-  margin: 5px 0;
-  border-radius: 5px;
-  position: relative;
+.header h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
 
-.menu > ul > li > a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
+/* --- 3. Menu Déroulant (Dropdown) --- */
+
+.dropdown-menu {
+    position: relative; /* Nécessaire pour positionner le contenu déroulant */
+    display: flex; /* Centrer le bouton */
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-/* Sous-menu (caché par défaut) */
-.sous-menu {
-  display: none;
-  background: #e6f0ff;
-  border-radius: 0 0 5px 5px;
+.dropbtn {
+    background-color: #28a745; /* Vert pour attirer l'attention (Action principale) */
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.sous-menu li a {
-  color: #0077cc;
-  padding: 8px 12px;
-  display: block;
-  text-decoration: none;
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #218838; /* Vert un peu plus foncé au survol */
+    transform: translateY(-2px); /* Petit effet de soulèvement */
 }
 
-.sous-menu li a:hover {
-  background: #cce0ff;
+/* Contenu du Menu Déroulant (caché par défaut) */
+.dropdown-content {
+    display: none; /* Cache par défaut */
+    position: absolute;
+    background-color: white;
+    min-width: 280px;
+    top: 100%; /* Positionne juste sous le bouton */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
+    border-radius: 5px;
+    overflow: hidden; /* Pour que les coins soient arrondis */
+    margin-top: 5px; /* Petit espace entre le bouton et le menu */
+    
+    /* Styles pour la nouvelle structure Flexbox des liens */
+    flex-direction: column; 
 }
 
-/* Afficher le sous-menu au survol */
-.menu li:hover .sous-menu {
-  display: block;
+/* Style de base des liens */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Utilisation de flex pour aligner le contenu (texte et icône) */
+    justify-content: space-between; /* Espace le texte et l'icône */
+    align-items: center; /* Centre verticalement */
+    transition: background-color 0.3s, color 0.3s;
+    border-bottom: 1px solid #eee; /* Ligne de séparation subtile */
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #e9ecef; /* Léger gris au survol */
+    color: #007bff; /* Couleur du texte change au survol */
+}
+
+/* Afficher le menu déroulant lorsque le bouton est survolé */
+.dropdown-menu:hover .dropdown-content {
+    /* Nous utilisons 'flex' pour l'affichage, car le conteneur est en flex-direction: column; */
+    display: flex; 
+}
+
+
+/* Styles pour les icônes (Font Awesome) */
+.dropdown-content a i {
+    font-size: 1.1em;
+    margin-left: 15px; /* Petit espace entre le texte et l'icône */
+    transition: color 0.3s;
+}
+
+/* Style spécifique pour le lien de Visualisation (Oeil) */
+.link-view i {
+    color: #007bff; /* Bleu pour "Voir" */
+}
+
+.link-view:hover i {
+    color: #0056b3;
+}
+
+/* Style spécifique pour le lien de Téléchargement (Flèche) */
+.link-download i {
+    color: #dc3545; /* Rouge pour "Télécharger" */
+}
+
+.link-download:hover i {
+    color: #b02a37;
+}
+
+
+/* --- 4. Section de Présentation --- */
+
+.presentation {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.presentation h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --- 5. Pied de Page (Footer) --- */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Gris foncé */
+    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* --- 6. Responsive de Base (pour mobiles) --- */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .dropbtn {
+        width: 90%; /* Prend plus de place sur petit écran */
+        padding: 12px 20px;
+    }
+
+    .dropdown-content {
+        min-width: 90%; /* S'aligne avec la largeur du bouton */
+    }
+
+    .presentation {
+        margin: 0 10px;
+    }
 }
