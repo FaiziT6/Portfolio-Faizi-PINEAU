@@ -1,67 +1,661 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sommaire des Travaux Pratiques</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio Faizi PINEAU - MIAGE Systèmes d'Information</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="stayle.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;900&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700;900&family=Unbounded:wght@200;400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+  <!-- Loading screen -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loading-content">
+      <i class="fa-solid fa-laptop-code fa-5x main-icon hidden" aria-hidden="true"></i>
+      <h1 id="loading-text" class="hidden">MY PORTFOLIO MIAGE</h1>
 
-    <header class="header">
-        <h1>🚀 Mon Sommaire de Travaux Pratiques 💻</h1>
-        <p>Retrouve tous tes projets ici !</p>
-    </header>
+      <div class="sub-icons">
+        <i class="fa-brands fa-github fa-2x hidden" aria-hidden="true"></i>
+        <i class="fa-solid fa-code fa-2x hidden" aria-hidden="true"></i>
+        <i class="fa-solid fa-user fa-2x hidden" aria-hidden="true"></i>
+      </div>
 
-    <main class="container">
-        <section class="dropdown-menu">
-            <button class="dropbtn">📂 Accéder à mes Travaux Pratiques</button>
-            <div class="dropdown-content">
-                
-                <a href="tp1/index.html" class="link-view">
-                    TP 1 
-                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
-                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
-                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
-                </a>
+      <h2 id="designer-text" class="hidden">Faizi PINEAU</h2>
+    </div>
+  </div>
 
-                <a href="tp2/tp2.zip" download="TP2-Flexbox.zip" class="link-download">
-                    TP 2 
-                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
-                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
-                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
-                </a>
-                
-                <a href="tp3/index.html" class="link-view">
-                    TP 3 
-                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
-                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
-                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
-                </a>
+  <!-- Header / Navigation -->
+  <header class="header-list" role="banner">
+    <nav class="div-list" role="navigation" aria-label="Navigation principale">
+      <ul class="ul-list">
+        <li class="active"><i class="fa-regular fa-house" aria-hidden="true"></i><a href="#home">Accueil</a></li>
+        <li><i class="fa-regular fa-file-lines" aria-hidden="true"></i><a href="#services">Travaux Demandés</a></li>
+        <li><i class="fa-solid fa-book-open" aria-hidden="true"></i><a href="#notes-cours">Notes de Cours</a></li>
+        <li><i class="fa-solid fa-sitemap" aria-hidden="true"></i><a href="#documents-si">Documents SI</a></li>
+        <li><i class="fa-solid fa-certificate" aria-hidden="true"></i><a href="#certifications">Certifications</a></li>
+        <li><i class="fa-solid fa-laptop-file" aria-hidden="true"></i><a href="#project">Projet Final</a></li>
+        <li><i class="fa-solid fa-sliders" aria-hidden="true"></i><a href="#soutenance">Diaporama</a></li>
+        <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i><a href="#ressources">Autres Ressources</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <a href="tp4/tp4.zip" download="TP4-Formulaires.zip" class="link-download">
-                    TP 4 
-                    <i class="fa-solid fa-plus" title="Ajouter un élément"></i>
-                    <i class="fa-solid fa-eye" title="Voir en ligne"></i>
-                    <i class="fa-solid fa-download" title="Télécharger le fichier"></i>
-                </a>
-                
-                <a href="#">... bientôt plus de projets !</a>
+  <main>
+    <!-- HOME -->
+    <section class="home" id="home">
+      <p class="home-p"><span class="home-s" aria-hidden="true"></span>Étudiant MIAGE</p>
+
+      <div class="home-container">
+        <div class="home-section">
+          <div class="info-home">
+            <h1>Bienvenue, je suis Faizi</h1>
+            <h3>Étudiant en Management et Informatique Appliquée à la Gestion des Entreprises (MIAGE)</h3>
+
+            <div class="info-p">
+              <p>Ce portfolio centralise mes productions académiques et techniques pour le module Introduction aux Systèmes d'Information.</p>
+              <p>Il est développé manuellement en HTML, CSS et JavaScript, hébergé sur GitHub, conformément aux consignes d'évaluation.</p>
             </div>
-        </section>
 
-        <section class="presentation">
-            <h2>Bienvenue !</h2>
-            <p>Utilise le menu déroulant pour naviguer. Les icônes t'indiquent l'action </p>
-            <p>Chaque TP est un pas de plus vers la maîtrise du développement </p>
-        </section>
+            <div class="info-p2">
+              <p><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Parcours MIAGE S5</p>
+              <p><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Travail à remettre pour le Contrôle Continu (50%)</p>
+            </div>
 
-    </main>
+            <div class="btnn">
+              <a class="btn-home1" href="https://faizit6.github.io/Portfolio-Faizi-PINEAU/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Mon Dépôt Git
+              </a>
+              <a class="btn-home2" href="SI\" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger CV
+              </a>
+            </div>
+      </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 - Réalisé par Faizi PINEAU</p>
-    </footer>
+    <!-- ABOUT / Profil -->
+    <section class="about" id="about">
+      <p>Présentation rapide</p>
+      <div class="title"><h1>Profil</h1></div>
+      <div class="hrrr"><hr /></div>
 
+      <div class="about-container">
+        <div class="info-about">
+          <div class="about-info">
+            <p>Je suis étudiant en double licence Économie/Gestion & Mathématique/Informatique.
+              Ceci est mon portfolio regroupant tout mon travail en SI (Système d'Information) S5.
+            </p>
+
+            <p>
+              L'objectif est de vous présenter tout ce qu'on a pu voir durant ce semestre, les difficultés rencontrées et les nouveaux atouts acquis.
+            </p>
+          </div>
+
+          <h2>What Drives Me</h2>
+
+          <div class="card">
+            <div class="c1">
+              <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Langages de programmation</h3>
+              <p>C, HTML, CSS, Java, Python, SQL</p>
+            </div>
+
+            <div class="c1">
+              <h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Établissement</h3>
+              <p>Université Paris Nanterre</p>
+            </div>
+
+            <div class="c1">
+              <h3><i class="fa-solid fa-folder-open" aria-hidden="true"></i> Projets</h3>
+              <p>Projet SI avec AWA</p>
+            </div>
+          </div>
+        </div>
+
+        <figure>
+          <img src="SI\Images\img.jpg" alt="Photo secondaire" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICES / Travaux demandés -->
+    <section class="services" id="services">
+      <p>Travaux Demandés</p>
+      <h1>TD corrigé SI</h1>
+      <hr />
+
+        <!-- TD1 -->
+         <article class="service-card">
+          <h3>TD 1 : Introduction aux Systèmes d'information</h3>
+          <p>
+            Comprendre les fondements des SI
+
+            <a
+              href="SI\Travaux dirigés\TD1\TD 1 SI.docx"
+              class="file-button-combined"
+            >
+              <span>📄</span> TD et corrigé du TD
+            </a>
+
+            <a
+              href="SI\Travaux dirigés\TD1\td_PGI_exercice.docx"
+              class="file-button-combined"
+            >
+              <span>📄</span> TD PGI_exercice
+            </a>
+
+            <a
+              href="SI\Travaux dirigés\TD1\PGI_exercice.xls"
+              class="file-button-combined"
+            >
+              <span>📊</span> PGI_exercice
+            </a>
+          </p>
+        </article>
+
+        <article class="service-card">
+        <h3>TD2 - Odoo</h3>
+        <p>
+          Introduction a Odoo et Étude de cas<br/>
+
+          <a
+            href="SI\Travaux dirigés\TD2\TP_Odoo.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> TP Odoo
+          </a>
+          <a
+            href="\Travaux dirigés\TD2\Etude_de_cas_correction.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Étude de cas avec correction
+          </a>
+        </p>
+      </article>
+
+      <article class="service-card">
+
+        <h3>TD3 - Processus de gestion & modélisation</h3>
+        <p>
+          Introduction au processus et aux schémas acteurs-flux
+
+          <a
+            href="SI\Travaux dirigés\TD3\Td_Processus_gestion.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Td - Processus de gestion & modélisation
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD3\Intro_schemas_acteurs_flux.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Introduction aux schémas acteurs-flux
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD3\Diagramme_drawio_training.drawio"
+            class="file-button-combined"
+          >
+            <span>📄</span> Diagramme draw.io du training
+          </a>
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>TD4 - Evénement-résultat</h3>
+        <p>
+          Réalisation de diagrammes Evenement-Résultat grace a draw.io<br/>
+
+          <a
+            href="SI\Travaux dirigés\TD4\schema.drawio"
+            class="file-button-combined"
+          >
+            <span>📄</span> schéma draw.io
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD4\Annexe_du_schema.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Annexe du schéma
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD4\Livrables_SI.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Livrables SI
+          </a>
+        </p>
+      </article>
+
+      <article class="service-card">
+
+        <h3>TD5 - MCD et diagramme de Gant</h3>
+        <p>
+          Utilisation de diagramme de gant et introduction a MCD
+
+          <a
+            href="SI\Travaux dirigés\TD5\Enonce_diagramme_de_gant.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Enoncé diagramme de gant
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD5\Correction_diagramme_de_gant.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Correction diagramme de gant
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD5\Td_MCD_consigne.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Td MCD consigne
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD5\Correction_exercice_1.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Correction exercice 1
+          </a>
+        </p>
+      </article>
+
+      <article class="service-card">
+        <h3>TD6 - Diagramme de cas d'utilisation et digramme de classe</h3>
+        <p>
+          Introduction aux diagrammes USE CASE et de classe
+
+          <a
+            href="SI\Travaux dirigés\TD6\Exercices_correction_USE_CASE.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Exercices et correction diagramme USE CASE
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD6\Cours_USE_CASE.pdf"
+            class="file-button-combined"
+          >
+            <span>📄</span> Cours USE CASE
+          </a>
+          <a
+            href="SI\Travaux dirigés\TD6\Exercices_correction_diagramme_de_classe.docx"
+            class="file-button-combined"
+          >
+            <span>📄</span> Exercice et correction diagramme de classe
+          </a>
+        </p>
+      </article>
+
+    <!-- NOTES DE COURS -->
+    <section class="services" id="notes-cours">
+      <p>Notes de Cours</p>
+      <h1>Mes Prises de Notes</h1>
+      <hr />
+
+      <div class="services-container">
+        <article class="service-card">
+          <h3>Partie 1 : Prise_de_note</h3>
+          <p>
+            Résumé du cours, définitions essentielles et points importants.<br/>
+            <a
+              href="SI\Cours\Prise_de_note.docx"
+              class="file-button-combined"
+              title="Télécharger la note"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+            </a>
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Partie 2</h3>
+          <p>
+            Cours gestion de projet version étudiant.<br/>
+            <a
+              href="SI\Cours\cours gestion de projet version étudiant.pdf"
+              class="file-button-combined"
+              title="Télécharger le cours de gestion"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+            </a>
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Partie 3</h3>
+          <p>
+            Cours Système d'information PDF.<br/>
+            <a
+              href="SI\Cours\cours information.pdf"
+              class="file-button-combined"
+              title="Télécharger le cours SI"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+            </a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DOCUMENTS SI -->
+    <section class="services" id="documents-si">
+      <p>Documents SI</p>
+      <h1>Gestion &amp; Systèmes d'Information</h1>
+      <hr />
+
+      <div class="services-container">
+        <article class="service-card"> 
+            <h3>Cahier des charges</h3>
+            <p>
+              PDF<br/>
+              <a
+                href="SI\CDocuments\Cahier_des_charges.pdf"
+                class="file-button-combined"
+                title="Télécharger le fichier"
+                style="padding: 10px 15px;"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+            </p>
+          </article>
+
+          <article class="service-card"> 
+            <h3>Exemple SFG</h3>
+            <p>
+              Word<br/>
+              <a
+                href="SI\Documents\Exemple_SFG.docx"
+                class="file-button-combined"
+                title="Télécharger le fichier"
+                style="padding: 10px 15px;"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+            </p>
+          </article>
+
+          <article class="service-card"> 
+            <h3>Annexe – exemple cahier des charges</h3>
+            <p>
+              PDF<br/>
+              <a
+                href="SI\Documents\Annexe_exemple_cahier_des_charges.pdf"
+                class="file-button-combined"
+                title="Télécharger le fichier"
+                style="padding: 10px 15px;"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+            </p>
+          </article>
+
+          <article class="service-card"> 
+            <h3>Dossier gestion de projet</h3>
+            <p>
+              Word<br/>
+              <a
+                href="SI\Documents\Dossier_gestion_de_projet.docx"
+                class="file-button-combined"
+                title="Télécharger le fichier"
+                style="padding: 10px 15px;"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+            </p>
+          </article>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="services" id="certifications">
+      <p>Certifications</p>
+      <h1>Validation des Compétences</h1>
+      <hr />
+
+      <div class="services-container">
+        <article class="service-card">
+          <img src="images/certif1.png" alt="Certification 1" />
+          <h3>Certification 1</h3>
+          <p>Pas de certificaation officiel pour le moment
+          <button class="CERT1"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Voir Certif</button>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJET FINAL -->
+    <section class="project" id="project">
+      <p>PROJECT</p>
+      <h1>Featured Work</h1>
+
+      <div class="project-card">
+        <h3>Site Website</h3>
+        <p>
+        Projet : Numérisation de la gestion administrative d'une association CHINGU.<br/>
+        Application : CHINGU_ASSO.<br/>
+        Objectifs : Digitaliser les processus (membres, cotisations, événements) et améliorer la visibilité/fiabilité de l'association.<br/>
+        Technologies principales : Flask (Python), SQLite.<br/>
+        Étudiants : Yaye Awa Diouf et Faizi Pineau.<br/>
+        </p>
+
+        <div class="skills">
+          <a href="#" aria-label="Flask(Phython)">Python</a>
+          <a href="#" aria-label="SQLite">SQLite</a>
+          <a href="#" aria-label="HTML">HTML</a>
+          <a href="#" aria-label="CSS">CSS</a>
+        </div>
+
+        <div class="btns">
+          <a href="#" class="btn" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          <a href="#" class="btn" rel="noopener noreferrer"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUTENANCE / DIAPORAMA -->
+    <section class="services" id="soutenance">
+      <p>Numérisation de la gestion administrative d'une association</p>
+      <h1>CHINGU</h1>
+      <hr />
+
+      <div class="services-container">
+        <article class="service-card">
+          <img src="SI\Images\diapo.png" alt="Diaporama" />
+          <h3>Support de Soutenance</h3>
+          <p>Slides préparées pour la présentation.
+          <a
+                href="SI\Projet\ChinguAsso_Pdf_Presentation_Livrable_compressed.pdf"
+                class="file-button-combined"
+                title="Télécharger le fichier"
+                style="padding: 10px 15px;"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESSOURCES -->
+    <section class="services" id="ressources">
+      <p>Autres Ressources</p>
+      <h1>Documents Complémentaires</h1>
+      <hr />
+
+      <div class="services-container">
+    <article class="service-card">
+        <h3>Documentation Odoo</h3>
+        <p>
+            Liens utiles
+            <a
+              href="https://www.odoo.com/documentation/18.0/fr/applications/essentials/activities.html"
+              class="file-button-combined"
+              title="Ouvrir le lien"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </p>
+    </article>
+
+    <article class="service-card">
+        <h3>Création de texte et aide au quotidien </h3>
+        <p>
+            Chatgpt AI
+            <a
+              href="https://chatgpt.com/"
+              class="file-button-combined"
+              title="Ouvrir le lien"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </p>
+    </article>
+
+    <article class="service-card">
+        <h3>Modéliser des schémas acteurs-flux</h3>
+        <p>
+            draw.io
+            <a
+              href="https://www.drawio.com/"
+              class="file-button-combined"
+              title="Ouvrir le lien"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </p>
+    </article>
+
+    <article class="service-card">
+        <h3>Créer des maquettes</h3>
+        <p>
+            FIGMA
+            <a
+              href="https://www.figma.com/fr-fr/"
+              class="file-button-combined"
+              title="Ouvrir le lien"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </p>
+    </article>
+    
+    <article class="service-card">
+        <h3>Créer des diagrammes de Gantt</h3>
+        <p>
+            onlinegantt
+            <a
+              href="https://www.onlinegantt.com/#/gantt"
+              class="file-button-combined"
+              title="Ouvrir le lien"
+              style="padding: 10px 15px;"
+            >
+              <i class="fa-solid fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+        </p>
+    </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p>CONTACT</p>
+      <h1>Pour me contacter</h1>
+
+      <div class="contact-content">
+        <div class="contact-info slide-in-left">
+          <p>Je réponds le plus vite possible</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>43014859@parisnanterre.fr</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>+33 6 17 48 98 34</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Université Paris Nanterre</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://faizit6.github.io/Portfolio-Faizi-PINEAU/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Portfolio GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/+33617489834" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form slide-in-right">
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-group">
+              <input type="text" name="user_name" placeholder="Votre nom" required />
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="user_email" placeholder="Votre email" required />
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <h2 class="footer-logo">Faizi</h2>
+
+      <ul class="footer-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">Présentation</a></li>
+        <li><a href="#services">Travaux</a></li>
+        <li><a href="#notes-cours">Notes</a></li>
+        <li><a href="#documents-si">Documents SI</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#project">Projet</a></li>
+        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="https://faizit6.github.io/Portfolio-Faizi-PINEAU/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://wa.me/+33617489834" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Faizi. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
 </body>
 </html>
